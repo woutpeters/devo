@@ -41,13 +41,13 @@ gulp.task('html', function() {
 
 // Copy
 gulp.task('copy', function () {
-    gulp.src('bower_components/bootstrap-sass-official/assets/fonts/bootstrap/**')
+    gulp.src('bower_components/bootstrap-sass/assets/fonts/bootstrap/**')
         .pipe(gulp.dest('dist/fonts/bootstrap/'));
 
-    gulp.src('bower_components/fontawesome/fonts/**')
+    gulp.src('bower_components/font-awesome-sass/assets/fonts/**')
         .pipe(gulp.dest('dist/fonts/fontawesome/'));
 
-    gulp.src('bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js')
+    gulp.src('bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js')
         .pipe(gulp.dest('dist/js/'));
 
     gulp.src('bower_components/jquery/dist/jquery.min.js')
