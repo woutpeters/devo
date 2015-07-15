@@ -57,10 +57,11 @@ gulp.task('copy', function () {
 // Start
 gulp.task('build', ['styles', 'scripts', 'html', 'copy']);
 
+// Deploy
 gulp.task('deploy', function() {
-    return gulp.src(options.dist + '**/*')
-        .pipe(pages());
-})
+  return gulp.src('dist/**/*')
+    .pipe(pages());
+});
 
 // Default
 gulp.task('default', function() {
